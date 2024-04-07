@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on linux)" generated="2024-04-07T12:22:45.758013" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tests" source="/home/tester/SeleniumApp/WebDemo/login_tests">
+<suite id="s1-s1" name="Gherkin Login" source="/home/tester/SeleniumApp/WebDemo/login_tests/gherkin_login.robot">
+<test id="s1-s1-t1" name="Valid Login" line="10">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-07T12:22:45.855889" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<msg time="2024-04-07T12:22:46.317452" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-04-07T12:22:46.317612" level="FAIL">InvalidArgumentException: Message: binary is not a Firefox executable
+</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-04-07T12:22:45.855708" elapsed="0.463238">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-04-07T12:22:46.319146" elapsed="0.000029"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2024-04-07T12:22:46.319247" elapsed="0.000019"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<status status="NOT RUN" start="2024-04-07T12:22:46.319434" elapsed="0.000056"/>
+</kw>
+<status status="FAIL" start="2024-04-07T12:22:45.855528" elapsed="0.464051">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</kw>
+<status status="FAIL" start="2024-04-07T12:22:45.855266" elapsed="0.464376">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</kw>
+<kw name="When user &quot;demo&quot; logs in with password &quot;mode&quot;" source_name="User &quot;${username}&quot; logs in with password &quot;${password}&quot;">
+<status status="NOT RUN" start="2024-04-07T12:22:46.320000" elapsed="0.000036"/>
+</kw>
+<kw name="Then welcome page should be open" owner="resource">
+<status status="NOT RUN" start="2024-04-07T12:22:46.320198" elapsed="0.000027"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-07T12:22:46.320508" elapsed="0.000113"/>
+</kw>
+<status status="FAIL" start="2024-04-07T12:22:45.854572" elapsed="0.466140">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" start="2024-04-07T12:22:45.771672" elapsed="0.549384"/>
+</suite>
+<suite id="s1-s2" name="Invalid Login" source="/home/tester/SeleniumApp/WebDemo/login_tests/invalid_login.robot">
+<kw name="Open Browser To Login Page" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-07T12:22:46.323534" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<msg time="2024-04-07T12:22:46.528985" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-04-07T12:22:46.529168" level="FAIL">InvalidArgumentException: Message: binary is not a Firefox executable
+</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-04-07T12:22:46.323365" elapsed="0.206591">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-04-07T12:22:46.530198" elapsed="0.000030"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2024-04-07T12:22:46.530298" elapsed="0.000018"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<status status="NOT RUN" start="2024-04-07T12:22:46.530458" elapsed="0.000022"/>
+</kw>
+<status status="FAIL" start="2024-04-07T12:22:46.323182" elapsed="0.207381">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username" line="17">
+<status status="FAIL" start="2024-04-07T12:22:46.530669" elapsed="0.000339">Parent suite setup failed:
+InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password" line="18">
+<status status="FAIL" start="2024-04-07T12:22:46.531178" elapsed="0.000163">Parent suite setup failed:
+InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password" line="19">
+<status status="FAIL" start="2024-04-07T12:22:46.531551" elapsed="0.001592">Parent suite setup failed:
+InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username" line="20">
+<status status="FAIL" start="2024-04-07T12:22:46.533354" elapsed="0.000200">Parent suite setup failed:
+InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password" line="21">
+<status status="FAIL" start="2024-04-07T12:22:46.533705" elapsed="0.000143">Parent suite setup failed:
+InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password" line="22">
+<status status="FAIL" start="2024-04-07T12:22:46.533984" elapsed="0.000141">Parent suite setup failed:
+InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-07T12:22:46.534406" elapsed="0.000135"/>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" start="2024-04-07T12:22:46.321426" elapsed="0.213151">Suite setup failed:
+InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</suite>
+<suite id="s1-s3" name="Valid Login" source="/home/tester/SeleniumApp/WebDemo/login_tests/valid_login.robot">
+<test id="s1-s3-t1" name="Valid Login" line="9">
+<kw name="Open Browser To Login Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-07T12:22:46.536904" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<msg time="2024-04-07T12:22:46.727540" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-04-07T12:22:46.727684" level="FAIL">InvalidArgumentException: Message: binary is not a Firefox executable
+</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-04-07T12:22:46.536764" elapsed="0.191559">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-04-07T12:22:46.728502" elapsed="0.000025"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2024-04-07T12:22:46.728589" elapsed="0.000015"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<status status="NOT RUN" start="2024-04-07T12:22:46.728811" elapsed="0.000036"/>
+</kw>
+<status status="FAIL" start="2024-04-07T12:22:46.536578" elapsed="0.192387">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</kw>
+<kw name="Input Username" owner="resource">
+<arg>demo</arg>
+<status status="NOT RUN" start="2024-04-07T12:22:46.729144" elapsed="0.000022"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<arg>mode</arg>
+<status status="NOT RUN" start="2024-04-07T12:22:46.729260" elapsed="0.000017"/>
+</kw>
+<kw name="Submit Credentials" owner="resource">
+<status status="NOT RUN" start="2024-04-07T12:22:46.729388" elapsed="0.000059"/>
+</kw>
+<kw name="Welcome Page Should Be Open" owner="resource">
+<status status="NOT RUN" start="2024-04-07T12:22:46.729568" elapsed="0.000017"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-07T12:22:46.729810" elapsed="0.000149"/>
+</kw>
+<status status="FAIL" start="2024-04-07T12:22:46.536324" elapsed="0.193710">InvalidArgumentException: Message: binary is not a Firefox executable
+</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" start="2024-04-07T12:22:46.534936" elapsed="0.195340"/>
+</suite>
+<status status="FAIL" start="2024-04-07T12:22:45.758632" elapsed="0.972204"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="Login Tests">Login Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Gherkin Login">Login Tests.Gherkin Login</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s2" name="Invalid Login">Login Tests.Invalid Login</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="Valid Login">Login Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
